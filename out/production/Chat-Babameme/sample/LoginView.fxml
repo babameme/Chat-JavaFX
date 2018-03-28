@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="443.0" prefWidth="450.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="443.0" prefWidth="439.0">
+         <children>
+            <Label layoutX="58.0" layoutY="184.0" text="Username:" textFill="#d37e16">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="152.0" layoutY="184.0" prefHeight="25.0" prefWidth="197.0" />
+            <Label layoutX="58.0" layoutY="222.0" text="Password:" textFill="#d37e16">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="152.0" layoutY="220.0" prefHeight="25.0" prefWidth="197.0" />
+            <Label layoutX="192.0" layoutY="263.0" prefHeight="17.0" prefWidth="84.0" text="ServerDetails" textFill="#d37e16">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="296.0" text="Hostname:" textFill="#d37e16">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="332.0" text="Port:" textFill="#d37e16">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="152.0" layoutY="294.0" prefHeight="25.0" prefWidth="197.0" />
+            <TextField layoutX="152.0" layoutY="330.0" prefHeight="25.0" prefWidth="197.0" />
+            <Button layoutX="204.0" layoutY="371.0" mnemonicParsing="false" style="-fx-background-color: #ccc92a;" text="Connect" textFill="#0d0d0d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="140.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="F:\PSA_Tinhoc\LTHDT\Project\Chat-Babameme\images\default.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
