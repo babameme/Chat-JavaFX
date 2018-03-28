@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <ImageView fitHeight="102.0" fitWidth="115.0" layoutX="204.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,13 +21,13 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="147.0" layoutY="165.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="txtUsername" layoutX="147.0" layoutY="165.0" prefHeight="25.0" prefWidth="216.0" />
       <Label layoutX="69.0" layoutY="197.0" text="Password" textFill="#d1961f">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <PasswordField layoutX="147.0" layoutY="194.0" prefHeight="25.0" prefWidth="216.0" />
+      <PasswordField fx:id="passField" layoutX="147.0" layoutY="194.0" prefHeight="25.0" prefWidth="216.0" />
       <Label layoutX="210.0" layoutY="233.0" text="Server Details" textFill="#ee004b">
          <font>
             <Font name="System Bold" size="14.0" />
@@ -39,14 +38,14 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="148.0" layoutY="263.0" prefHeight="25.0" prefWidth="216.0" />
+      <TextField fx:id="txtHostname" layoutX="148.0" layoutY="263.0" prefHeight="25.0" prefWidth="216.0" />
       <Label layoutX="102.0" layoutY="296.0" text="Port" textFill="#d1961f">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="148.0" layoutY="294.0" prefHeight="25.0" prefWidth="216.0" />
-      <Button layoutX="223.0" layoutY="334.0" mnemonicParsing="false" style="-fx-background-color: #d8da98;" text="Connect" textFill="#25a425">
+      <TextField fx:id="txtPort" layoutX="148.0" layoutY="294.0" prefHeight="25.0" prefWidth="216.0" />
+      <Button fx:id="buttonConnect" layoutX="223.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#connectMouseClicked" style="-fx-background-color: #d8da98;" text="Connect" textFill="#25a425">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
